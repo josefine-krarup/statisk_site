@@ -17,11 +17,6 @@ a:hover {
   color: red;
 }
 
-.back-button {
-  font-size: 20px;
-  padding: 10px 10px;
-}
-
 main {
   max-width: 1200px;
   margin: 0 auto;
@@ -137,7 +132,7 @@ p {
   filter: brightness(80%);
 }
 
-.product_container {
+#productcontainer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding-top: 20px;
