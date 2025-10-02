@@ -55,11 +55,13 @@ footer {
 }
 
 h1 {
+  font-family: "Coiny", system-ui;
   font-size: 2rem;
   padding: 10px;
 }
 
 h2 {
+  font-family: "Nunito", sans-serif;
   font-size: 1.5rem;
   padding: 10px;
 }
@@ -90,7 +92,15 @@ p {
   transform: scaleX(-1);
 }
 
-.category_list_container {
+.forside_img {
+  margin-top: -30px;
+}
+
+.forside_header {
+  margin-left: 100px;
+}
+
+#category_list_container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 20px;
@@ -100,9 +110,15 @@ p {
   display: grid;
   grid-template-rows: subgrid;
   grid-row: span 3;
-  gap: 10px;
   background-color: lightgrey;
   text-align: center;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.category_list_container a {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5rem;
 }
 
 .category_list_box h2 {
@@ -138,7 +154,7 @@ p {
   padding-top: 20px;
 }
 
-#udsolgt {
+/* #udsolgt {
   filter: grayscale(99%);
   opacity: 50%;
 }
@@ -154,6 +170,35 @@ p {
   font-size: 50px;
   top: 200px;
   left: 30px;
+} */
+
+.soldout .imageContainer p {
+  display: inline-block;
+  background: white;
+  border: 1px solid black;
+  color: red;
+}
+
+.imageContainer p {
+  opacity: 99%;
+  display: none;
+}
+
+.imageContainer {
+  display: grid;
+  > * {
+    place-self: center center;
+    grid-area: 1 / 1;
+  }
+}
+
+.onSale {
+  color: red;
+  display: none;
+}
+
+.discount .onSale {
+  display: block;
 }
 
 .infomation {
@@ -179,4 +224,10 @@ button {
 
 .red {
   color: red;
+}
+
+.size_box {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: grey;
 }
